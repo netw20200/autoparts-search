@@ -53,22 +53,22 @@ function searchProduct() {
     }
 
     result.innerHTML = `
-        <div class="card">
+<div class="card">
 
-            <h2>${found.description}</h2>
+<p><b>Код:</b> ${found.code}</p>
 
-            <p><b>Код:</b> ${found.code}</p>
+<p><b>Производитель:</b> ${found.manufacturer}</p>
 
-            <p><b>Производитель:</b> ${found.manufacturer}</p>
+<h2>${found.description}</h2>
 
-            <p><b>Количество:</b> ${found.quantity}</p>
+<p><b>Количество:</b> ${found.quantity}</p>
 
-            <p><b>Цена:</b> ${found.price}</p>
+<p><b>Цена:</b> ${found.price}</p>
 
-            <img src="${found.photo}" alt="Фото товара">
+<img src="${found.photo}" alt="Фото товара">
 
-        </div>
-    `;
+</div>
+`;    
 }
 button.addEventListener("click", searchProduct);
 
