@@ -59,7 +59,7 @@ function searchProduct() {
 
             <p><b>Код:</b> ${found.code}</p>
 
-            <p><b>Производитель:</b> ${found.brand}</p>
+            <p><b>Производитель:</b> ${found.manufacturer}</p>
 
             <p><b>Количество:</b> ${found.quantity}</p>
 
