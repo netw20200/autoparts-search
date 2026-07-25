@@ -66,7 +66,8 @@ if (products.length === 0) {
 <p><b>Количество:</b> ${found.quantity}</p>
 
 <p><b>Цена:</b> ${found.price}</p>
-<img src="images/${found.photo}" alt="Фото товара">
+<img src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}" alt="Фото товара">
+
 </div>
 `;    
 }
