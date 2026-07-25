@@ -1,4 +1,3 @@
-
 const API_URL = "https://script.google.com/macros/s/AKfycbzyjZerJYwh_9QYO2lscOAiFUI9lerQChi_CKhIPOvu-90qJ148ndigwgvcDgqYX-T8nA/exec";
 
 const input = document.getElementById("searchInput");
@@ -35,7 +34,10 @@ async function loadProducts() {
 
 }
 function searchProduct() {
-
+if (products.length === 0) {
+    result.innerHTML = "<p>Подождите, товары ещё загружаются...</p>";
+    return;
+}
     const query = input.value.trim().toLowerCase();
 
     if (query === "") {
