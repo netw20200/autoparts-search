@@ -44,9 +44,22 @@ if (products.length === 0) {
         return;
     }
 
-    const found = products.find(item =>
-        String(item.code).toLowerCase() === query
-    );
+    const found = products.find(item => {
+
+    const codeMatch =
+        String(item.code).toLowerCase() === query;
+
+    const crossMatch =
+        item.crosses &&
+        String(item.crosses)
+            .toLowerCase()
+            .split(",")
+            .map(x => x.trim())
+            .includes(query);
+
+    return codeMatch || crossMatch;
+
+});
 
     if (!found) {
         result.innerHTML = "<p>Товар не найден.</p>";
