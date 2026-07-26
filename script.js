@@ -173,11 +173,14 @@ function updateCart(){
 
 Количество: ${item.count}
 
-<button class="w3-button w3-green w3-round-small w3-margin-left">+</button>
+<button class="w3-button w3-green w3-round-small"
+onclick="increaseItem('${item.code}')">+</button>
 
-<button class="w3-button w3-orange w3-round-small">−</button>
+<button class="w3-button w3-orange w3-round-small"
+onclick="decreaseItem('${item.code}')">−</button>
 
-<button class="w3-button w3-red w3-round-small">✕</button>
+<button class="w3-button w3-red w3-round-small"
+onclick="removeItem('${item.code}')">✕</button>
 
 <p>${item.price} грн × ${item.count} = <b>${item.price * item.count} грн</b></p>
 
