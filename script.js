@@ -56,11 +56,11 @@ result.innerHTML = `
 <div class="w3-card-4 w3-white w3-round-xlarge"
 style="max-width:650px;margin:20px auto;padding:15px;">
 
-<div style="display:flex;gap:15px;align-items:flex-start;">
+<div style="display:flex;gap:10px;align-items:flex-start;">
 
-<div style="flex:0 0 170px;text-align:center;">
+<div style="flex:0 0 110px;text-align:center;">
 <img src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}"
-style="width:170px;height:170px;object-fit:contain;">
+style="width:100px;height:100px;object-fit:contain;">
 </div>
 
 <div style="flex:1;">
@@ -75,7 +75,7 @@ ${found.description}
 
 <p><b>Количество:</b> ${found.quantity}</p>
 
-<p style="font-size:24px;color:#d32f2f;font-weight:bold;">
+<p style="font-size:18px;color:#d32f2f;font-weight:bold;">
 ${found.price} грн
 </p>
 
