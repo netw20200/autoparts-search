@@ -234,6 +234,47 @@ window.decreaseItem = decreaseItem;
 window.removeItem = removeItem;
 function sendOrder(){
 
-    alert("Форма работает. Следующий шаг — отправка в Telegram.");
+    const name = document.getElementById("customerName").value;
+    const phone = document.getElementById("customerPhone").value;
+    const comment = document.getElementById("customerComment").value;
+
+    let productsText = "";
+
+    cart.forEach(item=>{
+        productsText += `${item.description}\n${item.count} × ${item.price} грн = ${item.count*item.price} грн\n\n`;
+    });
+
+    const total = cart.reduce((sum,item)=>sum + item.count*item.price,0);
+
+    emailjs.send(
+        "service_c66yum5",
+        "template_c2jum1w",
+        {
+            name: name,
+            phone: phone,
+            comment: comment,
+            products: productsText,
+            total: total
+        }
+    ).then(function(){
+
+        alert("Заказ успешно отправлен!");
+
+        cart = [];
+        updateCart();
+
+        document.getElementById("cart").style.display = "none";
+        document.getElementById("orderForm").style.display = "none";
+
+        document.getElementById("customerName").value = "";
+        document.getElementById("customerPhone").value = "";
+        document.getElementById("customerComment").value = "";
+
+    }, function(error){
+
+        alert("Ошибка отправки заказа.");
+        console.log(error);
+
+    });
 
 }
