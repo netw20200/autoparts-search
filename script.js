@@ -142,7 +142,7 @@ function addToCart(code){
         cart.push({
             code: product.code,
             description: product.description,
-            price: Number(product.price),
+            price: parseFloat(String(product.price).replace(",", ".").replace(/[^\d.]/g, "")),
             count: 1
         });
 updateCart();
