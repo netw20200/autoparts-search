@@ -8,18 +8,7 @@ let cart = [];
 async function loadProducts() {
 
     result.innerHTML = "<p>Загрузка товаров...</p>";
-    const savedProducts = localStorage.getItem("products");
-
-if(savedProducts){
-
-    products = JSON.parse(savedProducts);
-
-    result.innerHTML = "";
-
-    console.log("Товары загружены из памяти");
-
-}
-
+    
     try {
 
         const response = await fetch(API_URL);
@@ -29,7 +18,7 @@ if(savedProducts){
         }
 
         products = await response.json();
-localStorage.setItem("products", JSON.stringify(products));
+
         result.innerHTML = "";
 
         console.log(products);
