@@ -1,1 +1,73 @@
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Оформление заказа</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+</head>
+
+<body class="w3-light-grey">
+
+<div class="w3-content" style="max-width:800px">
+
+<h2 class="w3-center">Оформление заказа</h2>
+
+<div class="w3-card w3-white w3-padding">
+
+<h3>Ваш заказ</h3>
+
+<div id="orderItems"></div>
+
+<hr>
+
+<h3>
+Итого:
+<span id="orderTotal">0</span> грн
+</h3>
+
+<hr>
+
+<input
+class="w3-input w3-margin-bottom"
+id="customerName"
+placeholder="Ваше имя">
+
+<input
+class="w3-input w3-margin-bottom"
+id="customerPhone"
+placeholder="Телефон">
+
+<input
+class="w3-input w3-margin-bottom"
+id="customerEmail"
+placeholder="Email">
+
+<textarea
+class="w3-input"
+id="customerComment"
+placeholder="Комментарий"></textarea>
+
+<br>
+
+<button
+class="w3-button w3-red w3-round-large w3-block"
+onclick="sendOrder()">
+
+Подтвердить заказ
+
+</button>
+
+</div>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>
