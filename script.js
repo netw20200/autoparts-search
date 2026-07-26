@@ -232,3 +232,8 @@ function removeItem(code){
 window.increaseItem = increaseItem;
 window.decreaseItem = decreaseItem;
 window.removeItem = removeItem;
+function sendOrder(){
+
+    alert("Форма работает. Следующий шаг — отправка в Telegram.");
+
+}
