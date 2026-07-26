@@ -95,8 +95,8 @@ ${found.price} грн
 
 <div style="text-align:center;margin-top:20px;">
 
-<button class="w3-button w3-red w3-round-large w3-margin-top"
-onclick="alert('Кнопка работает')">
+<button class="w3-button w3-red w3-round-large"
+onclick="addToCart('${found.code}')">
 Купить
 </button>
 </div>
