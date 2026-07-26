@@ -8,6 +8,17 @@ let cart = [];
 async function loadProducts() {
 
     result.innerHTML = "<p>Загрузка товаров...</p>";
+    const savedProducts = localStorage.getItem("products");
+
+if(savedProducts){
+
+    products = JSON.parse(savedProducts);
+
+    result.innerHTML = "";
+
+    console.log("Товары загружены из памяти");
+
+}
 
     try {
 
