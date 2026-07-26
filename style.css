@@ -1,9 +1,13 @@
-body{
-font-family:Arial,sans-serif;
-margin:0;
-padding:20px;
-background:#f5f5f5;
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://netw20200.github.io/autoparts-search/images/1111.jpeg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
+
+
 
 header{
 text-align:center;
