@@ -167,11 +167,22 @@ function updateCart(){
         total += item.price * item.count;
 
         cartDiv.innerHTML += `
-            <p>
-                <b>${item.description}</b><br>
-                ${item.count} × ${item.price} грн
-            </p>
-            <hr>
+<div class="w3-padding-small" style="border-bottom:1px solid #ddd;">
+
+<b>${item.description}</b><br>
+
+Количество: ${item.count}
+
+<button class="w3-button w3-green w3-round-small w3-margin-left">+</button>
+
+<button class="w3-button w3-orange w3-round-small">−</button>
+
+<button class="w3-button w3-red w3-round-small">✕</button>
+
+<p>${item.price} грн × ${item.count} = <b>${item.price * item.count} грн</b></p>
+
+</div>
+`;
         `;
 
     });
