@@ -277,3 +277,16 @@ function sendOrder(){
     });
 
 }
+function showMessage(text){
+
+    const msg = document.getElementById("message");
+
+    msg.innerText = text;
+    msg.style.display = "block";
+
+    setTimeout(function(){
+        msg.style.display = "none";
+    },2500);
+
+}
+
