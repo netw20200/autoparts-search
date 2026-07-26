@@ -229,3 +229,6 @@ function removeItem(code){
     }
 
 }
+window.increaseItem = increaseItem;
+window.decreaseItem = decreaseItem;
+window.removeItem = removeItem;
