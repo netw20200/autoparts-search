@@ -54,21 +54,30 @@ if (products.length === 0) {
         return;
     }
 result.innerHTML = `
-<div class="card">
+<div class="w3-card-4 w3-white w3-round-xxlarge w3-padding"
+style="max-width:700px;margin:30px auto;">
+
+<img src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}"
+style="width:100%;max-height:320px;object-fit:contain;border-radius:15px;">
+
+<h2 style="color:#d32f2f;margin-top:20px;">
+${found.description}
+</h2>
+
+<hr>
 
 <p><b>Код:</b> ${found.code}</p>
 
 <p><b>Производитель:</b> ${found.manufacturer}</p>
 
-<h2>${found.description}</h2>
-
 <p><b>Количество:</b> ${found.quantity}</p>
 
-<p><b>Цена:</b> ${found.price}</p>
-<img src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}" alt="Фото товара">
+<p style="font-size:28px;color:#0b8f32;font-weight:bold;">
+${found.price}
+</p>
 
 </div>
-`;    
+`;
     
 }
 button.addEventListener("click", searchProduct);
