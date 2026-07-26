@@ -53,8 +53,7 @@ if (products.length === 0) {
         result.innerHTML = "<p>Товар не найден.</p>";
         return;
     }
-
-    result.innerHTML = `
+result.innerHTML = `
 <div class="card">
 
 <p><b>Код:</b> ${found.code}</p>
@@ -70,6 +69,7 @@ if (products.length === 0) {
 
 </div>
 `;    
+    
 }
 button.addEventListener("click", searchProduct);
 
