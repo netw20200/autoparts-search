@@ -122,6 +122,7 @@ loadProducts();
 
 function addToCart(code){
 
+    console.log("addToCart вызвана", code);
     const product = products.find(item => item.code == code);
 
     if(!product) return;
