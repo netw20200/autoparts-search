@@ -53,54 +53,41 @@ if (products.length === 0) {
         return;
     }
 result.innerHTML = `
-<div class="w3-card-4 w3-white w3-round-xxlarge"
-style="max-width:560px;margin:25px auto;overflow:hidden;">
+<div class="w3-card-4 w3-white w3-round-xlarge"
+style="max-width:650px;margin:20px auto;padding:15px;">
 
+<div style="display:flex;gap:15px;align-items:flex-start;">
+
+<div style="flex:0 0 170px;text-align:center;">
 <img src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}"
-alt="Фото товара"
-style="width:100%;height:240px;object-fit:contain;background:#f7f7f7;padding-top:15px;">
+style="width:170px;height:170px;object-fit:contain;">
+</div>
 
-<div class="w3-container w3-padding-16">
+<div style="flex:1;">
 
-<h2 style="margin-top:0;color:#c62828;font-weight:bold;">
+<h3 style="margin:0 0 10px;color:#c62828;">
 ${found.description}
-</h2>
+</h3>
 
-<table style="width:100%;font-size:18px;border-collapse:collapse;">
+<p><b>Код:</b> ${found.code}</p>
 
-<tr>
-<td><b>Код</b></td>
-<td>${found.code}</td>
-</tr>
+<p><b>Производитель:</b> ${found.manufacturer}</p>
 
-<tr>
-<td><b>Производитель</b></td>
-<td>${found.manufacturer}</td>
-</tr>
+<p><b>Количество:</b> ${found.quantity}</p>
 
-<tr>
-<td><b>Количество</b></td>
-<td>${found.quantity}</td>
-</tr>
-
-<tr>
-<td><b>Цена</b></td>
-<td style="font-size:26px;font-weight:bold;color:#d32f2f;">
+<p style="font-size:24px;color:#d32f2f;font-weight:bold;">
 ${found.price} грн
-</td>
-</tr>
-
-</table>
-
-<div style="text-align:center;margin-top:20px;">
+</p>
 
 <button class="w3-button w3-red w3-round-large"
 onclick="addToCart('${found.code}')">
 Купить
 </button>
+
 </div>
 
 </div>
+
 </div>
 `;
     
