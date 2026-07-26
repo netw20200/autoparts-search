@@ -72,10 +72,39 @@ class="w3-button w3-green w3-round-large">
 </button>
 
 </div>
-  
+  <div id="orderForm"
+class="w3-card w3-white w3-round-large w3-padding"
+style="max-width:700px;margin:20px auto;display:none;">
+
+<h3>Оформление заказа</h3>
+
+<input class="w3-input w3-border w3-round"
+id="customerName"
+placeholder="Ваше имя">
+
+<br>
+
+<input class="w3-input w3-border w3-round"
+id="customerPhone"
+placeholder="Телефон">
+
+<br>
+
+<textarea class="w3-input w3-border w3-round"
+id="customerComment"
+placeholder="Комментарий"></textarea>
+
+<br>
+
+<button class="w3-button w3-green w3-round-large"
+onclick="sendOrder()">
+Отправить заказ
+</button>
+
+  </div>
 <footer>
 
-<p>Телефон</p>
+
 
 
 </footer>
