@@ -59,7 +59,7 @@ style="max-width:700px;margin:25px auto;overflow:hidden;">
 
 <img src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}"
 alt="Фото товара"
-style="width:100%;height:300px;object-fit:contain;background:#f7f7f7;">
+style="width:100%;height:300px;object-fit:contain;background:#f7f7f7;padding-top:15px;">
 
 <div class="w3-container w3-padding-24">
 
