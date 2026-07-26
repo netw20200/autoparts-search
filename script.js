@@ -150,6 +150,10 @@ updateCart();
     console.log(cart);
     document.getElementById("cart").style.display = "block";
 updateCart();
+    showMessage("✓ Товар добавлен в корзину");
+
+input.value = "";
+input.focus();
 }
 
 function updateCart(){
