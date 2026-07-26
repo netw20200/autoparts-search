@@ -115,3 +115,34 @@ input.addEventListener("keydown", function(e){
 });
 
 loadProducts();
+
+function addToCart(code){
+
+    const product = products.find(item => item.code == code);
+
+    if(!product) return;
+
+    const existing = cart.find(item => item.code == code);
+
+    if(existing){
+
+        if(existing.count < Number(product.quantity)){
+            existing.count++;
+        }else{
+            alert("На складе больше нет товара.");
+        }
+
+    }else{
+
+        cart.push({
+            code: product.code,
+            description: product.description,
+            price: Number(product.price),
+            count: 1
+        });
+
+    }
+
+    console.log(cart);
+
+}
