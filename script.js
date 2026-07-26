@@ -88,14 +88,17 @@ display:flex;
 justify-content:space-between;
 align-items:center;">
 
+<div>
+<b>Цена:</b>
 <span style="
-font-size:22px;
+font-size:20px;
 font-weight:bold;
 color:#d32f2f;">
 
 ${found.price} грн
 
 </span>
+</div>
 
 <button
 class="w3-button w3-red w3-round-large"
