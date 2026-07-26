@@ -148,5 +148,6 @@ function addToCart(code){
     }
 
     console.log(cart);
+    document.getElementById("cart").style.display = "block";
 alert("Товар добавлен в корзину");
 }
