@@ -112,7 +112,13 @@ onclick="sendOrder()">
  
 <div class="w3-hide-small" style="margin-bottom:32px"> </div>
   
-  
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "ТВОЙ_PUBLIC_KEY",
+});
+</script>
 <script src="script.js"></script>
 
 </body>
