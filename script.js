@@ -54,13 +54,13 @@ if (products.length === 0) {
     }
 result.innerHTML = `
 <div class="w3-card-4 w3-white w3-round-xxlarge"
-style="max-width:700px;margin:25px auto;overflow:hidden;">
+style="max-width:560px;margin:25px auto;overflow:hidden;">
 
 <img src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}"
 alt="Фото товара"
-style="width:100%;height:300px;object-fit:contain;background:#f7f7f7;padding-top:15px;">
+style="width:100%;height:240px;object-fit:contain;background:#f7f7f7;padding-top:15px;">
 
-<div class="w3-container w3-padding-24">
+<div class="w3-container w3-padding-16">
 
 <h2 style="margin-top:0;color:#c62828;font-weight:bold;">
 ${found.description}
