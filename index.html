@@ -53,6 +53,7 @@ placeholder="Введите каталожный номер">
 <div id="result">
 Загрузка товаров...
 </div>
+
 <div id="cart"
 class="w3-card w3-white w3-round-large w3-padding"
 style="max-width:700px;margin:20px auto;display:none;">
@@ -65,12 +66,13 @@ style="max-width:700px;margin:20px auto;display:none;">
 
 <p><b>Итого:</b> <span id="cartTotal">0</span> грн</p>
 
-<button class="w3-button w3-red w3-round-large"
-onclick="addToCart('${found.code}')">
-Купить
+<button id="checkoutButton"
+class="w3-button w3-green w3-round-large">
+Оформить заказ
 </button>
 
 </div>
+  
 <footer>
 
 <p>Телефон</p>
