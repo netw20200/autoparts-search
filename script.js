@@ -151,3 +151,23 @@ updateCart();
     document.getElementById("cart").style.display = "block";
 alert("Товар добавлен в корзину");
 }
+
+function updateCart(){
+
+    const cartDiv = document.getElementById("cartItems");
+
+    cartDiv.innerHTML = "";
+
+    cart.forEach(item => {
+
+        cartDiv.innerHTML += `
+        <p>
+        ${item.description}
+        <br>
+        ${item.count} × ${item.price} грн
+        </p>
+        `;
+
+    });
+
+}
