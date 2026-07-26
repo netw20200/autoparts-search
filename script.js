@@ -147,5 +147,5 @@ function addToCart(code){
     }
 
     console.log(cart);
-
+alert("Товар добавлен в корзину");
 }
