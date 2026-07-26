@@ -91,6 +91,10 @@ ${found.price} грн
 </td>
 </tr>
 
+<button class="w3-button w3-red w3-round-large w3-margin-top"
+onclick="addToCart('${found.code}')">
+Купить
+</button>
 </table>
 
 </div>
