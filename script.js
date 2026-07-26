@@ -144,7 +144,7 @@ function addToCart(code){
             price: Number(product.price),
             count: 1
         });
-
+updateCart();
     }
 
     console.log(cart);
