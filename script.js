@@ -189,3 +189,40 @@ function updateCart(){
     totalDiv.innerText = total;
 
 }
+
+function increaseItem(code){
+
+    const item = cart.find(i => i.code == code);
+    const product = products.find(i => i.code == code);
+
+    if(item.count < Number(product.quantity)){
+        item.count++;
+    }
+
+    updateCart();
+
+}
+
+function decreaseItem(code){
+
+    const item = cart.find(i => i.code == code);
+
+    if(item.count > 1){
+        item.count--;
+    }
+
+    updateCart();
+
+}
+
+function removeItem(code){
+
+    cart = cart.filter(i => i.code != code);
+
+    updateCart();
+
+    if(cart.length == 0){
+        document.getElementById("cart").style.display = "none";
+    }
+
+}
