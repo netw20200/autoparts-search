@@ -156,19 +156,26 @@ updateCart();
 function updateCart(){
 
     const cartDiv = document.getElementById("cartItems");
+    const totalDiv = document.getElementById("cartTotal");
 
     cartDiv.innerHTML = "";
 
+    let total = 0;
+
     cart.forEach(item => {
 
+        total += item.price * item.count;
+
         cartDiv.innerHTML += `
-        <p>
-        ${item.description}
-        <br>
-        ${item.count} × ${item.price} грн
-        </p>
+            <p>
+                <b>${item.description}</b><br>
+                ${item.count} × ${item.price} грн
+            </p>
+            <hr>
         `;
 
     });
+
+    totalDiv.innerText = total;
 
 }
