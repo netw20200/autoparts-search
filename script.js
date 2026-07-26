@@ -72,10 +72,10 @@ ${found.description}
 
 <p><b>Количество:</b> ${found.quantity}</p>
 
-<p style="font-size:28px;color:#0b8f32;font-weight:bold;">
-${found.price}
-</p>
 
+<p style="font-size:30px;color:#0b8f32;font-weight:bold;text-align:right;">
+Цена: ${found["Цена"]}
+</p>
 </div>
 `;
     
