@@ -5,7 +5,7 @@ const button = document.getElementById("searchButton");
 const result = document.getElementById("result");
 
 let products = [];
-
+let cart = [];
 async function loadProducts() {
 
     result.innerHTML = "<p>Загрузка товаров...</p>";
