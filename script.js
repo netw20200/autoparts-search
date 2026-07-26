@@ -52,37 +52,60 @@ if (products.length === 0) {
         result.innerHTML = "<p>Товар не найден.</p>";
         return;
     }
+    
 result.innerHTML = `
-<div class="w3-card-4 w3-white w3-round-xlarge"
-style="max-width:650px;margin:20px auto;padding:15px;">
+<div class="w3-card w3-white w3-round-large"
+style="max-width:560px;margin:15px auto;padding:12px;">
 
-<div style="display:flex;gap:10px;align-items:flex-start;">
+<div style="display:flex;align-items:center;gap:12px;">
 
-<div style="flex:0 0 110px;text-align:center;">
-<img src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}"
-style="width:100px;height:100px;object-fit:contain;">
-</div>
+<img
+src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}"
+style="
+width:90px;
+height:90px;
+object-fit:contain;
+border:1px solid #ddd;
+border-radius:8px;
+padding:4px;
+background:white;">
 
 <div style="flex:1;">
 
-<h3 style="margin:0 0 10px;color:#c62828;">
+<div style="font-size:18px;font-weight:bold;color:#c62828;margin-bottom:8px;">
 ${found.description}
-</h3>
+</div>
 
-<p><b>Код:</b> ${found.code}</p>
+<div><b>Код:</b> ${found.code}</div>
 
-<p><b>Производитель:</b> ${found.manufacturer}</p>
+<div><b>Производитель:</b> ${found.manufacturer}</div>
 
-<p><b>Количество:</b> ${found.quantity}</p>
+<div><b>Остаток:</b> ${found.quantity}</div>
 
-<p style="font-size:18px;color:#d32f2f;font-weight:bold;">
+<div style="
+margin-top:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;">
+
+<span style="
+font-size:22px;
+font-weight:bold;
+color:#d32f2f;">
+
 ${found.price} грн
-</p>
 
-<button class="w3-button w3-red w3-round-large"
+</span>
+
+<button
+class="w3-button w3-red w3-round-large"
 onclick="addToCart('${found.code}')">
+
 Купить
+
 </button>
+
+</div>
 
 </div>
 
