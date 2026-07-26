@@ -307,3 +307,10 @@ function showMessage(text){
 
 }
 
+function goToCheckout(){
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    window.location.href = "checkout.html";
+
+}
