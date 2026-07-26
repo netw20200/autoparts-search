@@ -29,7 +29,7 @@ if(savedProducts){
         }
 
         products = await response.json();
-
+localStorage.setItem("products", JSON.stringify(products));
         result.innerHTML = "";
 
         console.log(products);
