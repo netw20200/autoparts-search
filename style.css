@@ -60,8 +60,11 @@ display:block;
 margin-top:10px;
 }
 
-footer{
-margin-top:50px;
-text-align:center;
-color:#555;
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
