@@ -131,7 +131,59 @@ onclick="goToCheckout()">
 
   </div>
 
+<div id="vinForm"
+style="display:none;position:fixed;left:0;top:0;width:100%;height:100%;
+background:rgba(0,0,0,.5);z-index:9999;">
 
+<div class="w3-card w3-white w3-round-large"
+style="max-width:500px;margin:50px auto;padding:20px;">
+
+<h3>🚗 Подбор по VIN-коду</h3>
+
+<input id="vinCode"
+class="w3-input w3-border w3-margin-bottom"
+placeholder="VIN автомобиля">
+
+<input id="vinPart"
+class="w3-input w3-border w3-margin-bottom"
+placeholder="Что требуется подобрать?">
+
+<input id="vinName"
+class="w3-input w3-border w3-margin-bottom"
+placeholder="Ваше имя">
+
+<input id="vinPhone"
+class="w3-input w3-border w3-margin-bottom"
+placeholder="Телефон">
+
+<input id="vinEmail"
+class="w3-input w3-border w3-margin-bottom"
+placeholder="Email">
+
+<textarea id="vinComment"
+class="w3-input w3-border w3-margin-bottom"
+placeholder="Комментарий (необязательно)"
+style="height:90px;"></textarea>
+
+<div style="display:flex;gap:10px;justify-content:flex-end;">
+
+<button
+class="w3-button w3-gray w3-round"
+onclick="document.getElementById('vinForm').style.display='none'">
+Отмена
+</button>
+
+<button
+class="w3-button w3-green w3-round"
+onclick="sendVinRequest()">
+Отправить запрос
+</button>
+
+</div>
+
+</div>
+
+                       </div>
 
   
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
