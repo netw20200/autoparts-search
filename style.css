@@ -267,4 +267,19 @@ font-weight:bold;
     background:rgba(40,40,40,.85);
     transform:scale(1.02);
 }
+.menu-links{
+    text-align:center;
+    margin:20px 0;
+    font-size:22px;
+    font-weight:bold;
+}
 
+.menu-links a{
+    color:#1976d2;
+    text-decoration:none;
+    margin:0 8px;
+}
+
+.menu-links a:hover{
+    text-decoration:underline;
+  }
