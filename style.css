@@ -241,3 +241,30 @@ font-weight:bold;
     padding:20px;
     box-shadow:0 10px 35px rgba(0,0,0,.35);
 }
+.menu-block{
+    max-width:650px;
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.menu-card{
+    display:block;
+    padding:18px;
+    text-align:center;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    background:rgba(40,40,40,.65);
+    backdrop-filter:blur(5px);
+    border-radius:12px;
+    transition:.2s;
+}
+
+.menu-card:hover{
+    background:rgba(40,40,40,.85);
+    transform:scale(1.02);
+}
+
