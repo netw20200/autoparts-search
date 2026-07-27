@@ -400,3 +400,31 @@ clearButton.addEventListener("click", function () {
     searchInput.focus();
 
 });
+function updateCartCounter(){
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let count = 0;
+
+    cart.forEach(item => {
+
+        count += item.count;
+
+    });
+
+    const badge = document.getElementById("cartCount");
+
+    if(count > 0){
+
+        badge.style.display = "flex";
+        badge.innerText = count;
+
+    }else{
+
+        badge.style.display = "none";
+
+    }
+
+}
+
+updateCartCounter();
