@@ -271,7 +271,10 @@ if (cart.length === 0) {
     const name = document.getElementById("customerName").value;
     const phone = document.getElementById("customerPhone").value;
     const comment = document.getElementById("customerComment").value;
-
+if(name.trim() === "" || phone.trim() === ""){
+    alert("Введите имя и телефон.");
+    return;
+}
     let productsText = "";
 
     cart.forEach(item=>{
