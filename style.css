@@ -285,9 +285,9 @@ font-weight:bold;
     text-decoration:underline;
   }
 
-.oswald-<uniquifier> {
+.oswald {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
