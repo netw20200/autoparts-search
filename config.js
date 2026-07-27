@@ -4,6 +4,10 @@ const CONFIG = {
 
     PHONE: "+380111111111",
 
+BACKGROUND: "images/1111.jpeg",
+
+LOGO: "images/logo.png",
+    
     EMAIL: "shop@gmail.com",
 
     LOGO: "images/logo.png",
