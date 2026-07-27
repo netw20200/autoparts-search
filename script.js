@@ -286,8 +286,8 @@ if(name.trim() === "" || phone.trim() === ""){
     const total = cart.reduce((sum,item)=>sum + item.count*item.price,0);
 
     emailjs.send(
-        "service_c66yum5",
-        "template_c2jum1w",
+    CONFIG.EMAILJS_SERVICE,
+    CONFIG.EMAILJS_TEMPLATE_ORDER,
         {
             name: name,
             phone: phone,
@@ -364,8 +364,8 @@ comment: document.getElementById("vinComment").value
 };
 
 emailjs.send(
-"service_c66yum5",
-"template_qcggelu",
+    CONFIG.EMAILJS_SERVICE,
+    CONFIG.EMAILJS_TEMPLATE_VIN,
 params
 ).then(function () {
 
