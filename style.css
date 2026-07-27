@@ -1,4 +1,7 @@
-body,h1 {font-family: "Raleway", sans-serif}
+body,h1 {font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;}
 body, html {height: 100%}
 .bgimg {
   background-image: url('https://netw20200.github.io/autoparts-search/images/1111.jpeg');
