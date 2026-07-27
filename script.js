@@ -475,3 +475,8 @@ function openOrderForm(){
 }
 document.getElementById("shopName").innerText = CONFIG.SHOP_NAME;
 document.getElementById("shopPhone").innerText = CONFIG.PHONE;
+document.getElementById("shopLogo").src = CONFIG.LOGO;
+
+document.querySelector(".bgimg").style.backgroundImage =
+`url('${CONFIG.BACKGROUND}')`;
+
