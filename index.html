@@ -48,12 +48,27 @@ border-radius:10px;
 text-align:center;
 font-weight:bold;">
 </div>
-<div class="search">
+<div class="search" style="position:relative;display:flex;gap:10px;">
 
 <input
 type="text"
 id="searchInput"
-placeholder="Введите каталожный номер">
+placeholder="Введите каталожный номер"
+style="padding-right:40px;">
+
+<span
+id="clearSearch"
+style="
+display:none;
+position:absolute;
+right:95px;
+top:50%;
+transform:translateY(-50%);
+cursor:pointer;
+font-size:22px;
+color:#888;">
+✖
+</span>
 
 <button id="searchButton">
 Найти
