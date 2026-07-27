@@ -225,3 +225,16 @@ font-weight:bold;
     background:rgba(0,0,0,.45);
     z-index:998;
 }
+#cart{
+    display:none;
+    position:fixed;
+    top:90px;
+    right:20px;
+    width:420px;
+    max-height:75vh;
+    overflow-y:auto;
+    z-index:999;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
