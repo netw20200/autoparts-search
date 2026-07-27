@@ -364,7 +364,7 @@ document.getElementById("vinComment").value = "";
 
 }, function (error) {
 
-alert("Ошибка отправки.");
+alert(error.text || error.message || JSON.stringify(error));
 
 console.log(error);
 
