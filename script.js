@@ -480,3 +480,21 @@ document.getElementById("shopLogo").src = CONFIG.LOGO;
 document.querySelector(".bgimg").style.backgroundImage =
 `url('${CONFIG.BACKGROUND}')`;
 
+let currentLang = LANG_RU;
+
+function setLanguage(lang){
+
+    if(lang === "ua"){
+        currentLang = LANG_UA;
+    }else{
+        currentLang = LANG_RU;
+    }
+
+    document.getElementById("searchButton").innerText = currentLang.search;
+
+    document.getElementById("searchInput").placeholder =
+    currentLang.searchPlaceholder;
+
+}
+
+setLanguage("ru");
