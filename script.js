@@ -264,7 +264,10 @@ window.increaseItem = increaseItem;
 window.decreaseItem = decreaseItem;
 window.removeItem = removeItem;
 function sendOrder(){
-
+if (cart.length === 0) {
+    alert("Корзина пуста.");
+    return;
+}
     const name = document.getElementById("customerName").value;
     const phone = document.getElementById("customerPhone").value;
     const comment = document.getElementById("customerComment").value;
