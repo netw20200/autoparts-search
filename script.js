@@ -73,7 +73,8 @@ style="max-width:560px;margin:15px auto;padding:12px;">
 <div style="display:flex;align-items:center;gap:12px;">
 
 <img
-src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo}"
+src="https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/${found.photo || 'no-image.jpeg'}"
+onerror="this.src='https://raw.githubusercontent.com/netw20200/autoparts-search/main/images/no-image.jpeg'"
 style="
 width:90px;
 height:90px;
