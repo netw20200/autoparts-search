@@ -371,3 +371,32 @@ console.log(error);
 });
 
 }
+const clearButton = document.getElementById("clearSearch");
+
+searchInput.addEventListener("input", function () {
+
+    if (this.value.trim() === "") {
+
+        clearButton.style.display = "none";
+
+        result.innerHTML = "";
+
+    } else {
+
+        clearButton.style.display = "block";
+
+    }
+
+});
+
+clearButton.addEventListener("click", function () {
+
+    searchInput.value = "";
+
+    result.innerHTML = "";
+
+    clearButton.style.display = "none";
+
+    searchInput.focus();
+
+});
