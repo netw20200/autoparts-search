@@ -219,7 +219,9 @@ onclick="removeItem('${item.code}')">✕</button>
     });
 
     totalDiv.innerText = total;
+localStorage.setItem("cart", JSON.stringify(cart));
 
+updateCartCounter();
 }
 
 function increaseItem(code){
