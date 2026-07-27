@@ -346,8 +346,8 @@ comment: document.getElementById("vinComment").value
 };
 
 emailjs.send(
-"ТВОЙ_SERVICE_ID",
-"ТВОЙ_TEMPLATE_ID",
+"service_c66yum5",
+"template_qcggelu",
 params
 ).then(function () {
 
