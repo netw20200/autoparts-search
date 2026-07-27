@@ -474,3 +474,4 @@ function openOrderForm(){
 
 }
 document.getElementById("shopName").innerText = CONFIG.SHOP_NAME;
+document.getElementById("shopPhone").innerText = CONFIG.PHONE;
