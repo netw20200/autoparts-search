@@ -402,8 +402,6 @@ clearButton.addEventListener("click", function () {
 });
 function updateCartCounter(){
 
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
     let count = 0;
 
     cart.forEach(item => {
@@ -426,5 +424,4 @@ function updateCartCounter(){
     }
 
 }
-
 updateCartCounter();
