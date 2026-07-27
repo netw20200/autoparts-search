@@ -450,3 +450,17 @@ document.getElementById("cartIcon").addEventListener("click", function(){
     }
 
 });
+
+
+function openOrderForm(){
+
+    if(cart.length === 0){
+        alert("Корзина пуста.");
+        return;
+    }
+
+    document.getElementById("orderForm").style.display = "block";
+
+    document.getElementById("cart").style.display = "none";
+
+}
