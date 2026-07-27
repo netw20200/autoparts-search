@@ -292,7 +292,7 @@ if(name.trim() === "" || phone.trim() === ""){
             name: name,
             phone: phone,
             comment: comment,
-            products: productsText,
+            order: productsText,
             total: total
         }
     ).then(function(){
