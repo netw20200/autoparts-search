@@ -265,7 +265,7 @@ window.increaseItem = increaseItem;
 window.decreaseItem = decreaseItem;
 window.removeItem = removeItem;
 function sendOrder(){
-    alert("sendOrder запущена");
+    
 if (cart.length === 0) {
     alert("Корзина пуста.");
     return;
