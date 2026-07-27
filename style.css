@@ -215,7 +215,7 @@ font-size:12px;
 font-weight:bold;
 
 }
-.cart-overlay{
+#cartOverlay{
     display:none;
     position:fixed;
     left:0;
