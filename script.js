@@ -174,7 +174,7 @@ updateCart();
     }
 
     console.log(cart);
-    document.getElementById("cart").style.display = "block";
+    
 updateCart();
     showMessage("✓ Товар добавлен в корзину");
 
@@ -427,3 +427,19 @@ function updateCartCounter(){
 
 }
 updateCartCounter();
+
+document.getElementById("cartIcon").addEventListener("click", function(){
+
+    const cartBlock = document.getElementById("cart");
+
+    if(cartBlock.style.display === "block"){
+
+        cartBlock.style.display = "none";
+
+    }else{
+
+        cartBlock.style.display = "block";
+
+    }
+
+});
