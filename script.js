@@ -473,3 +473,4 @@ function openOrderForm(){
     document.getElementById("cart").style.display = "none";
 
 }
+document.getElementById("shopName").innerText = CONFIG.SHOP_NAME;
