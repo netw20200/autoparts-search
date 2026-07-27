@@ -327,3 +327,47 @@ function goToCheckout(){
     window.location.href = "checkout.html";
 
 }
+function sendVinRequest() {
+
+const params = {
+
+name: document.getElementById("vinName").value,
+
+phone: document.getElementById("vinPhone").value,
+
+email: document.getElementById("vinEmail").value,
+
+vin: document.getElementById("vinCode").value,
+
+part: document.getElementById("vinPart").value,
+
+comment: document.getElementById("vinComment").value
+
+};
+
+emailjs.send(
+"ТВОЙ_SERVICE_ID",
+"ТВОЙ_TEMPLATE_ID",
+params
+).then(function () {
+
+alert("Запрос по VIN успешно отправлен!");
+
+document.getElementById("vinForm").style.display = "none";
+
+document.getElementById("vinName").value = "";
+document.getElementById("vinPhone").value = "";
+document.getElementById("vinEmail").value = "";
+document.getElementById("vinCode").value = "";
+document.getElementById("vinPart").value = "";
+document.getElementById("vinComment").value = "";
+
+}, function (error) {
+
+alert("Ошибка отправки.");
+
+console.log(error);
+
+});
+
+}
