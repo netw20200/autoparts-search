@@ -480,21 +480,93 @@ document.getElementById("shopLogo").src = CONFIG.LOGO;
 document.querySelector(".bgimg").style.backgroundImage =
 `url('${CONFIG.BACKGROUND}')`;
 
+// ================= ЯЗЫК =================
+
 let currentLang = LANG_RU;
 
-function setLanguage(lang){
+function applyLanguage(){
 
-    if(lang === "ua"){
-        currentLang = LANG_UA;
-    }else{
-        currentLang = LANG_RU;
-    }
+document.getElementById("searchButton").innerText =
+currentLang.search;
 
-    document.getElementById("searchButton").innerText = currentLang.search;
+document.getElementById("searchInput").placeholder =
+currentLang.searchPlaceholder;
 
-    document.getElementById("searchInput").placeholder =
-    currentLang.searchPlaceholder;
+// VIN
+
+document.querySelector("#vinForm h3").innerText =
+"🚗 " + currentLang.vin;
+
+document.getElementById("vinCode").placeholder =
+currentLang.vinCode;
+
+document.getElementById("vinPart").placeholder =
+currentLang.vinPart;
+
+document.getElementById("vinName").placeholder =
+currentLang.name;
+
+document.getElementById("vinPhone").placeholder =
+currentLang.phone;
+
+document.getElementById("vinEmail").placeholder =
+currentLang.email;
+
+document.getElementById("vinComment").placeholder =
+currentLang.comment;
+
+// Кнопка запроса VIN
+
+document.querySelector(
+'button[onclick="sendVinRequest()"]'
+).innerText = currentLang.send;
+
+document.querySelector(
+'button[onclick="document.getElementById(\'vinForm\').style.display=\'none\'"]'
+).innerText = currentLang.cancel;
+
+// Кнопка открытия VIN
+
+document.querySelector(
+'button[onclick="document.getElementById(\'vinForm\').style.display=\'block\'"]'
+).innerText = currentLang.vinButton;
+
+// Корзина
+
+document.querySelector("#cart h3").innerText =
+"🛒 " + currentLang.cart;
+
+document.getElementById("checkoutButton").innerText =
+currentLang.checkout;
 
 }
 
-setLanguage("ru");
+function setLanguage(lang){
+
+if(lang === "ua"){
+
+currentLang = LANG_UA;
+
+localStorage.setItem("lang","ua");
+
+}else{
+
+currentLang = LANG_RU;
+
+localStorage.setItem("lang","ru");
+
+}
+
+applyLanguage();
+
+}
+
+const savedLang = localStorage.getItem("lang");
+
+if(savedLang === "ua"){
+
+currentLang = LANG_UA;
+
+}
+
+applyLanguage();
