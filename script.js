@@ -337,7 +337,15 @@ function goToCheckout(){
 
 }
 function sendVinRequest() {
-
+if (
+    document.getElementById("vinName").value.trim() === "" ||
+    document.getElementById("vinPhone").value.trim() === "" ||
+    document.getElementById("vinCode").value.trim() === "" ||
+    document.getElementById("vinPart").value.trim() === ""
+) {
+    alert("Заполните имя, телефон, VIN-код и укажите, что требуется подобрать.");
+    return;
+}
 const params = {
 
 name: document.getElementById("vinName").value,
