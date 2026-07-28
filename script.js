@@ -570,3 +570,8 @@ currentLang = LANG_UA;
 }
 
 applyLanguage();
+document.getElementById("vinTitle").innerText = currentLang.vin;
+
+document.getElementById("salesLink").innerText = currentLang.sales;
+document.getElementById("accessoriesLink").innerText = currentLang.accessories;
+document.getElementById("fluidsLink").innerText = currentLang.fluids;
