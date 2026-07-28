@@ -304,7 +304,7 @@ if(name.trim() === "" || phone.trim() === ""){
 
         document.getElementById("cart").style.display = "none";
         document.getElementById("orderForm").style.display = "none";
-
+document.getElementById("cartOverlay").style.display = "none";
         document.getElementById("customerName").value = "";
         document.getElementById("customerPhone").value = "";
         document.getElementById("customerComment").value = "";
