@@ -468,10 +468,9 @@ function openOrderForm(){
         return;
     }
 
-    document.getElementById("orderForm").style.display = "block";
-
-    document.getElementById("cart").style.display = "none";
-
+document.getElementById("cartOverlay").style.display = "block";
+document.getElementById("orderForm").style.display = "block";
+document.getElementById("cart").style.display = "none";
 }
 document.getElementById("shopName").innerText = CONFIG.SHOP_NAME;
 document.getElementById("shopPhone").innerText = CONFIG.PHONE;
