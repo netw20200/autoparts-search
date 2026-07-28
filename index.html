@@ -104,8 +104,8 @@ backdrop-filter:blur(2px);
 ">
   
 
-<h2 style="margin:0 0 12px 0;font-size:20px;">
- Подбор по VIN-коду
+<h2 id="vinTitle" style="margin:0 0 12px 0;font-size:20px;">
+Подбор по VIN-коду
 </h2>
 
 <button
@@ -120,9 +120,9 @@ onclick="document.getElementById('vinForm').style.display='block'">
 
 <div class="menu-block">
 <div class="menu-links">
-    <div><a href="sales.html">• Акции</a></div> 
-    <div><a href="accessories.html">• Аксессуары</a></div>
-    <div><a href="fluids.html">• Жидкости</a></div>
+    <div><a href="sales.html" id="salesLink">• Акции</a></div>
+<div><a href="accessories.html" id="accessoriesLink">• Аксессуары</a></div>
+</div><a href="fluids.html" id="fluidsLink">• Жидкости</a></div>
 </div>
     
     <div id="cartOverlay" class="cart-overlay"></div>
