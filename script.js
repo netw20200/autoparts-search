@@ -536,19 +536,20 @@ document.querySelector(
 document.querySelector("#cart h3").innerText =
 "🛒 " + currentLang.cart;
 
-document.getElementById("checkoutButton").innerText =
-currentLang.checkout;
-document.getElementById("vinTitle").innerText =
-currentLang.vin;
+const checkoutBtn = document.getElementById("checkoutButton");
+if (checkoutBtn) checkoutBtn.innerText = currentLang.checkout;
 
-document.getElementById("salesLink").innerText =
-currentLang.sales;
+const vinTitle = document.getElementById("vinTitle");
+if (vinTitle) vinTitle.innerText = currentLang.vin;
 
-document.getElementById("accessoriesLink").innerText =
-currentLang.accessories;
+const salesLink = document.getElementById("salesLink");
+if (salesLink) salesLink.innerText = currentLang.sales;
 
-document.getElementById("fluidsLink").innerText =
-currentLang.fluids;
+const accessoriesLink = document.getElementById("accessoriesLink");
+if (accessoriesLink) accessoriesLink.innerText = currentLang.accessories;
+
+const fluidsLink = document.getElementById("fluidsLink");
+if (fluidsLink) fluidsLink.innerText = currentLang.fluids;
 }
 
 function setLanguage(lang){
