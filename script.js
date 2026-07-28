@@ -486,6 +486,14 @@ document.getElementById("shopLogo").src = CONFIG.LOGO;
 document.querySelector(".bgimg").style.backgroundImage =
 `url('${CONFIG.BACKGROUND}')`;
 
+
+function closeOrderForm(){
+
+    document.getElementById("orderForm").style.display = "none";
+    document.getElementById("cartOverlay").style.display = "none";
+
+}
+
 // ================= ЯЗЫК =================
 
 let currentLang = LANG_RU;
