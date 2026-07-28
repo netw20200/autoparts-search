@@ -538,7 +538,17 @@ document.querySelector("#cart h3").innerText =
 
 document.getElementById("checkoutButton").innerText =
 currentLang.checkout;
+document.getElementById("vinTitle").innerText =
+currentLang.vin;
 
+document.getElementById("salesLink").innerText =
+currentLang.sales;
+
+document.getElementById("accessoriesLink").innerText =
+currentLang.accessories;
+
+document.getElementById("fluidsLink").innerText =
+currentLang.fluids;
 }
 
 function setLanguage(lang){
@@ -569,13 +579,5 @@ currentLang = LANG_UA;
 
 }
 
-applyLanguage();
-document.getElementById("checkoutButton").innerText =
-currentLang.checkout;
-document.getElementById("vinTitle").innerText = currentLang.vin;
 
-document.getElementById("salesLink").innerText = currentLang.sales;
-document.getElementById("accessoriesLink").innerText = currentLang.accessories;
-document.getElementById("fluidsLink").innerText = currentLang.fluids;
-}
 
