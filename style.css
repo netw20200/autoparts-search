@@ -244,6 +244,24 @@ font-weight:bold;
     padding:20px;
     box-shadow:0 10px 35px rgba(0,0,0,.35);
 }
+#orderForm{
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90%;
+    max-width:500px;
+    z-index:1000;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+#orderForm input,
+#orderForm textarea{
+    margin-bottom:12px;
+}
 .menu-block{
     max-width:650px;
     margin:20px auto;
