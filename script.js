@@ -311,7 +311,7 @@ if(name.trim() === "" || phone.trim() === ""){
 
     }, function(error){
 
-        alert("Ошибка отправки заказа.");
+        alert(error.text || error.message || JSON.stringify(error));
         console.log(error);
 
     });
