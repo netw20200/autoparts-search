@@ -578,6 +578,6 @@ if(savedLang === "ua"){
 currentLang = LANG_UA;
 
 }
-
+applyLanguage();
 
 
