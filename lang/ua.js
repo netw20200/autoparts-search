@@ -15,7 +15,9 @@ cart: "Кошик",
 checkout: "Оформити замовлення",
 total: "Разом:",
 quantity: "Кількість:",
-
+sales: "Акції",
+accessories: "Аксесуари",
+fluids: "Рідини",
 vin: "Підбір по VIN",
 vinButton: "Запросити підбір",
 
