@@ -468,10 +468,17 @@ function openOrderForm(){
         return;
     }
 
-document.getElementById("cartOverlay").style.display = "block";
-document.getElementById("orderForm").style.display = "block";
-document.getElementById("cart").style.display = "none";
+    document.getElementById("cartOverlay").style.display = "block";
+    document.getElementById("orderForm").style.display = "block";
+
+    document.getElementById("orderForm").style.position = "fixed";
+    document.getElementById("orderForm").style.top = "50%";
+    document.getElementById("orderForm").style.left = "50%";
+    document.getElementById("orderForm").style.transform = "translate(-50%, -50%)";
+
+    document.getElementById("cart").style.display = "none";
 }
+
 document.getElementById("shopName").innerText = CONFIG.SHOP_NAME;
 document.getElementById("shopPhone").innerText = CONFIG.PHONE;
 document.getElementById("shopLogo").src = CONFIG.LOGO;
